@@ -15,7 +15,9 @@
     "prettier": "prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "test:coverage": "test-storybook --coverage",
+    "test:report": "npx nyc report --reporter=lcov -t coverage/storybook --report-dir coverage/storybook"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -23,8 +25,8 @@
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
     "eslint": "8.30.0",
-    "eslint-config-next": "13.1.1",
-    "next": "13.1.1",
+    "eslint-config-next": "^13.1.1",
+    "next": "^13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4",
@@ -37,6 +39,7 @@
     "@babel/preset-typescript": "^7.18.6",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-coverage": "^0.0.7",
     "@storybook/addon-essentials": "^6.5.15",
@@ -59,9 +62,11 @@
     "nyc": "^15.1.0",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
+    "source-map-support": "^0.5.21",
     "storybook-addon-next-router": "^4.0.2",
     "storybook-css-modules-preset": "^1.1.1",
     "tailwindcss": "^3.2.4",
+    "ts-node": "^10.9.1",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "util": "^0.12.5"
   },
