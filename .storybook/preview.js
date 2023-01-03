@@ -57,4 +57,11 @@ export const parameters = {
   nextRouter: {
     Provider: RouterContext.Provider,
   },
+  themes: {
+    default: 'light',
+    list: [
+      { name: 'light', class: '', color: '#00aced' },
+      { name: 'facebook', class: 'theme-fb', color: '#3b5998' },
+    ],
+  },
 };

@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/stories/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       xs: '375px',
