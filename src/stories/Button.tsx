@@ -33,6 +33,7 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
+  console.log('fixes');
   const mode = primary
     ? 'storybook-button--primary'
     : 'storybook-button--secondary';
