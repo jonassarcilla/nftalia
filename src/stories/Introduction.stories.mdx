@@ -7,8 +7,20 @@ import Flow from './assets/flow.svg';
 import Plugin from './assets/plugin.svg';
 import Repo from './assets/repo.svg';
 import StackAlt from './assets/stackalt.svg';
+import { ADDON_ID as ADDON_IFRAME } from '@geometricpanda/storybook-addon-iframe';
 
-<Meta title="Example/Introduction" />
+<Meta
+  title="Example/Introduction"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: {
+      canvas: { hidden: true },
+      [ADDON_IFRAME]: {
+        hidden: true,
+      },
+    },
+  }}
+/>
 
 <style>
   {`
@@ -182,14 +194,22 @@ We recommend building UIs with a [**component-driven**](https://componentdriven.
       Configure, customize, and extend
     </span>
   </a>
-  <a className="link-item" href="https://storybook.js.org/tutorials/" target="_blank">
+  <a
+    className="link-item"
+    href="https://storybook.js.org/tutorials/"
+    target="_blank"
+  >
     <img src={Direction} alt="direction" />
     <span>
       <strong>In-depth guides</strong>
       Best practices from leading teams
     </span>
   </a>
-  <a className="link-item" href="https://github.com/storybookjs/storybook" target="_blank">
+  <a
+    className="link-item"
+    href="https://github.com/storybookjs/storybook"
+    target="_blank"
+  >
     <img src={Code} alt="code" />
     <span>
       <strong>GitHub project</strong>

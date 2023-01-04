@@ -28,6 +28,11 @@ module.exports = {
       },
     },
     '@storybook/addon-coverage',
+    '@storybook/addon-a11y',
+    'storybook-addon-designs',
+    '@geometricpanda/storybook-addon-iframe',
+    'storybook-addon-pseudo-states',
+    'storybook-addon-performance/register',
   ],
   features: {
     interactionsDebugger: true,

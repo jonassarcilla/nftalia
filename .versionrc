@@ -1,0 +1,45 @@
+{
+  "types": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "hidden": true
+    },
+    {
+      "type": "docs",
+      "section": "Documentation"
+    },
+    {
+      "type": "style",
+      "hidden": true
+    },
+    {
+      "type": "refactor",
+      "hidden": true
+    },
+    {
+      "type": "perf"
+    },
+    {
+      "type": "test"
+    },
+    {
+      "type": "build",
+      "section": "Builds"
+    },
+    {
+      "type": "ci",
+      "section": "CI/CD and DevOps"
+    }
+  ],
+  "commitUrlFormat": "https://github.com/jonassarcilla/nftalia/commit/{{hash}}",
+  "compareUrlFormat": "https://ap-southeast-2.console.aws.amazon.com/codesuite/codecommit/repositories/siphon_ui/compare/refs/tags/{{previousTag}}/.../refs/tags/{{currentTag}}?region=ap-southeast-2",
+  "issueUrlFormat": "https://github.com/jonassarcilla/nftalia/issues/{{id}}"
+}

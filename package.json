@@ -17,7 +17,7 @@
     "build-storybook": "build-storybook",
     "test-storybook": "test-storybook",
     "test:coverage": "test-storybook --coverage",
-    "test:report": "npx nyc report --reporter=lcov -t coverage/storybook --report-dir coverage/storybook"
+    "test:report": "npx nyc report --reporter=lcov -t coverage/storybook --report-dir public/test/coverage/storybook"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -39,7 +39,9 @@
     "@babel/preset-typescript": "^7.18.6",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@geometricpanda/storybook-addon-iframe": "^0.2.2",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@storybook/addon-a11y": "^6.5.15",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-coverage": "^0.0.7",
     "@storybook/addon-essentials": "^6.5.15",
@@ -65,7 +67,11 @@
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "source-map-support": "^0.5.21",
+    "standard-version": "^9.5.0",
+    "storybook-addon-designs": "^6.3.1",
     "storybook-addon-next-router": "^4.0.2",
+    "storybook-addon-performance": "^0.16.1",
+    "storybook-addon-pseudo-states": "^1.15.2",
     "storybook-addon-themes": "^6.1.0",
     "storybook-css-modules-preset": "^1.1.1",
     "tailwindcss": "^3.2.4",

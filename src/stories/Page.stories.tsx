@@ -1,6 +1,5 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { within, userEvent } from '@storybook/testing-library';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { userEvent, within } from '@storybook/testing-library';
 import { Page } from './Page';
 
 export default {
@@ -17,6 +16,11 @@ const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
 export const LoggedOut = Template.bind({});
 
 export const LoggedIn = Template.bind({});
+LoggedIn.parameters = {
+  viewport: {
+    defaultViewport: 'xs',
+  },
+};
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
 LoggedIn.play = async ({ canvasElement }) => {
