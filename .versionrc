@@ -41,5 +41,8 @@
   ],
   "commitUrlFormat": "https://github.com/jonassarcilla/nftalia/commit/{{hash}}",
   "compareUrlFormat": "https://ap-southeast-2.console.aws.amazon.com/codesuite/codecommit/repositories/siphon_ui/compare/refs/tags/{{previousTag}}/.../refs/tags/{{currentTag}}?region=ap-southeast-2",
-  "issueUrlFormat": "https://github.com/jonassarcilla/nftalia/issues/{{id}}"
+  "issueUrlFormat": "https://github.com/jonassarcilla/nftalia/issues/{{id}}",
+  "issuePrefixes": [
+    "GH-"
+  ]
 }
