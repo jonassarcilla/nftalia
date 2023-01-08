@@ -1,9 +1,12 @@
-import { Inter } from '@next/font/google';
+// import { Inter } from '@next/font/google';
+import Buttons from '@components/Button/Buttons';
+import { Epilogue, Urbanist } from '@next/font/google';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const urbanist = Urbanist({ subsets: ['latin'] });
+const epilogue = Epilogue({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -16,8 +19,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <button className="btn-primary">dfdf</button>
+        <Buttons />
         <div className={styles.description}>
-          <p>
+          <p className={epilogue.className}>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
           </p>
@@ -67,10 +71,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={urbanist.className}>
               Docs <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={urbanist.className}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
@@ -81,10 +85,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={epilogue.className}>
               Learn <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={urbanist.className}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </a>
@@ -95,10 +99,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={urbanist.className}>
               Templates <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={urbanist.className}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </a>
@@ -109,10 +113,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={urbanist.className}>
               Deploy <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={urbanist.className}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
